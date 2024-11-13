@@ -15,7 +15,7 @@ Welcome to **CoreMarkDown**, the app that provides **real-time markdown preview*
 
 ## Screenshots:
 
-![Screenshot](app.png)
+![Screenshot](coremarkdown.gif)
 
 ## How to Use:
 1. Open a Markdown file or start typing.
