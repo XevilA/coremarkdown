@@ -28,6 +28,6 @@ Welcome to **CoreMarkDown**, the app that provides **real-time markdown preview*
 Clone this repository and run the app on your local machine:
 
 ```bash
-git clone https://github.com/username/CoreMarkDown
-cd CoreMarkDown
-python3 core_markdown_app.py
+git clone https://github.com/XevilA/coremarkdown
+cd coremarkdown
+python3 app.py
