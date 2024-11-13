@@ -1,37 +1,33 @@
+# CoreMarkDown - Real-Time Markdown Preview App
 
-### Explanation of the Elements:
+Welcome to **CoreMarkDown**, the app that provides **real-time markdown preview** with modern UX/UI on both **Linux** and **macOS**.
 
-1. **Images**:
-   - You can insert images using the `![alt-text](image-url)` syntax.
-   - Alternatively, you can embed images with custom attributes using HTML tags like `<img>` to control the size, such as `width="500"`.
+![Linux Test Pass](https://img.shields.io/badge/Linux-Test%20Pass-green)
+![macOS Pass](https://img.shields.io/badge/macOS-Pass-green)
+![Windows Null](https://img.shields.io/badge/Windows-Not%20Tested-gray)
 
-2. **Videos**:
-   - **YouTube Embedding**: You can include a YouTube video using the `[![Thumbnail](thumbnail-image-url)](youtube-video-url)` format. Replace the `example_video_id` with the actual video ID.
-   - **Self-hosted Video**: If you have your video hosted somewhere, you can embed it directly in your Markdown file using the `<video>` HTML tag. The `controls` attribute allows the user to play, pause, and control the volume.
+## Features:
+- Real-time Markdown Preview
+- Cross-platform (Linux and macOS)
+- Modern, Responsive UX/UI
+- Open and Save Markdown files
+- Toggle Preview visibility
 
-3. **Text Styling**:
-   - You can use headers (`#`, `##`, `###`) for titles and subsections.
-   - Lists can be created with `-` or `*` for unordered lists and `1.` for ordered lists.
-   - Inline code is wrapped in backticks (`` `code` ``) and code blocks are wrapped in triple backticks (```` ``` ````).
+## Screenshots:
 
-### Rendering the Markdown:
+![Screenshot](app.png)
 
-1. **On GitHub**: GitHub supports Markdown rendering automatically when you upload `.md` files to a repository. You can directly view the document with images and videos on GitHub.
-   
-2. **On Local Applications**: If you're using a Markdown editor or viewer, such as Visual Studio Code or Typora, it will render images and videos as part of the live preview.
+## How to Use:
+1. Open a Markdown file or start typing.
+2. See real-time updates in the preview.
+3. Toggle the preview with the "Hide/Show Preview" button.
+4. Save your Markdown file for later use.
 
-3. **Using Static Site Generators**: If you're generating a website (e.g., using Jekyll, Hugo, or MkDocs), the images and videos will render directly on the web page.
+## Installation:
 
-### Optional: Embed Markdown Rendering in Your PyQt6 App
+Clone this repository and run the app on your local machine:
 
-If you are integrating this Markdown file within your PyQt6 app (the one you created previously), you can use a Markdown renderer to display it as HTML. Here’s how you might convert Markdown to HTML in your app:
-
-```python
-import markdown
-
-def convert_markdown_to_html(markdown_text):
-    return markdown.markdown(markdown_text)
-
-# Then you can pass this HTML into your QLabel for the preview
-html_content = convert_markdown_to_html(markdown_text)
-self.markdown_preview.setText(html_content)
+```bash
+git clone https://github.com/username/CoreMarkDown
+cd CoreMarkDown
+python3 core_markdown_app.py
